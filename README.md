@@ -12,3 +12,4 @@ O controle das tarefas desse projeto será realizado no GitHub
 - :up: atualização
 - :beatle: coreção de bug
 - :checkered_flag: release
+......................
