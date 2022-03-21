@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --font-primary: "Baloo Da 2", serif;
     --font-secundary: "Josefin Slab", serif;
@@ -207,7 +211,7 @@ header {
 .menu-link:hover{
     color: #6a3093;
 }
-
+/*---------------------------------------------------MENU LATERAL---------------------------------------------------------*/
 .social-media {
     position: absolute;
     bottom: 2rem;
@@ -232,7 +236,7 @@ header {
 .social-media i:hover {
     background-color: #a044ff;
 }
-
+/*------------------------------------------SESSÃO CONHECIMENTO--------------------------------------------------------------*/
 .conhecimentos {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -319,10 +323,11 @@ header {
     object-fit: cover;
     width: 100%;
 }
-
+/*--------------------------------------SESSÃO PROJETOS---------------------------------------------*/
 .projetos {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 3rem; /*EU MODIFIQUEI AQUI*/
 }
 
 .card {
@@ -402,7 +407,7 @@ header {
     opacity: 1;
     visibility: visible;
 }
-
+/*-------------------------------------------------SESSÃO-CONTATO---------------------------------------*/
 .sessao-contato {
     width: 100%;
     height: 100vh;
@@ -560,4 +565,52 @@ header {
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
 }
