@@ -155,7 +155,7 @@
 
         <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
-                <div class="margin">
+                
                     <div class="contato-left"></div>
                     <div class="contato-right">
                         <h1>Contato</h1>
@@ -172,39 +172,46 @@
                             </div>
                             <div class="input-group">
                                 <label class="field-label" for="mensagem">Mensagem</label>
-                                <textarea class="field" id="mensagem" rows="3"></textarea>
+                                <textarea class="field" id="mensagem"></textarea>
                                 
                             </div>
                             <button type="submit" class="botao">Enviar</button>
                         </form>
-                    </div>
+                   
                 </div>
             </div>
         </section>
 
         <section class="sessao-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
-                <h1>F u o</h1>
+                <h1>Faça um orçamento</h1>
                 <form>
-                    <label for="qtde">Qtde de Páginas</label>
-                    <input type="number" min="1" name="qtde" id="qtde">
-                    <label for="js">Preciso de um script JS</label>
-                    <input type="checkbox" name="js" id="js">
-                    <label>Layout</label>
-                    <div class="group-layout">
-                        <div>
-                            <input type="radio" name="layout" id="layout-sim">
-                            <label for="layout-sim">Preciso de um layout</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="layout" id="layout-nao">
-                            <label for="layout-nao">Já tenho um layout</label>
-                        </div>
-                        <label for="prazo">Prazo</label>
-                        <input type="range" name="prazo" id="prazo" min="1" max="10">
-                        <label id="preco">R$ 0,00</label>
-                        <button class="btn btn-orcamento" type="submit">Enviar</button>
+                    <div>
+                        <label for="qtde">Qtde de Páginas</label>
+                        <input type="number" min="1" name="qtde" id="qtde">
                     </div>
+                     <div>
+                        <label for="js">Preciso de um script JS</label>
+                        <input type="checkbox" name="js" id="js">
+                     </div>   
+                    <div>
+                       <label>Layout</label>
+                            <div>
+                                <input type="radio" name="layout" id="layout-sim">
+                                <label for="layout-sim">Preciso de um layout</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="layout" id="layout-nao">
+                                <label for="layout-nao">Já tenho um layout</label>
+                            </div>
+                    </div>
+                        <div class="group-layout"> 
+                            
+                            <label for="prazo">Prazo</label>
+                            <input type="range" name="prazo" id="prazo" min="1" max="10">
+                            <label id="preco">R$ 0,00</label>
+                            <button class="botao" type="submit">Enviar</button>
+                        </div>
                 </form>
             </div>
         </section>
